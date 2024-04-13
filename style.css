@@ -11,29 +11,25 @@ body {
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
 }
 
 h1 {
-  font-size: 96px !important;
+  font-size: 96px;
 }
 
 h2 {
-  font-size: 48px !important;
+  font-size: 48px;
 }
 
 h3 {
-  font-size: 24px !important;
+  font-size: 24px;
   opacity: 0.7;
 }
 
 p {
-  padding: 20px;
-  border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .navigation-links {
@@ -44,19 +40,42 @@ p {
 
 .navigation-links a {
   margin: 20px;
+}
+
+.contact-link {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-.contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
 .about-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -68,7 +87,6 @@ p {
 }
 
 .about-paragraphs {
-  display: flex;
   margin: 30px 0;
 }
 
@@ -88,18 +106,28 @@ p {
   text-decoration: underline;
 }
 
-.space {
-  margin-top: 100px;
-}
-
-.buttonlink {
-  background: var(--primary-color);
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: blue;
+@media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 23px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .email-link {
+    font-size: 14px;
+  }
+  .primary-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+    background-color: #6b62ff;
+  }
 }
